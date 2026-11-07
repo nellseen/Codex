@@ -1,0 +1,18 @@
+{
+  "name": "codex-telegram-manager",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/config.js && node --check src/access.js && node --check src/dashboard.js && node --check src/store.js && node --check src/keyboards.js && node --check src/services/profiles.js && node --check src/services/process-runner.js && node --check src/services/codex.js && node --check src/services/usage.js && node --check src/services/app-server-usage.js && node --check src/utils/locks.js && node --check src/utils/escape-html.js && node --check src/utils/redact.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "telegraf": "^4.16.3"
+  }
+}
